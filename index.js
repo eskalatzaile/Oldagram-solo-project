@@ -29,6 +29,39 @@ const posts = [
 ]
 
 const postContent = document.querySelector("#post-content")
+renderPosts()
+
+document.addEventListener('dbclick' function(){
+    console.log("clicked!")
+})
+
+document.addEventListener('dbclick', function(e){
+    if (e.target.dataset.likes){
+        handleLikeclick(e.target.dataset.likes)
+    }
+    console.log('clicked!')
+})
+
+function handleLikeClick(user){
+    const userLikes = posts.filter(function(userliked){
+        return user === userliked.username
+    })[0]
+
+
+    if(!userLikes.isLiked){
+        userLikes.likes++
+        userLikes.isLiked = true
+
+    }else {
+        userLikes.likes--
+        userLikes.isLiked = false
+    }
+    render()
+}
+
+function render(){
+    document.getElementById("post-content")
+}
 
 function renderPosts(){
     posts.forEach(function (post) {
@@ -59,5 +92,9 @@ function renderPosts(){
     
 }
 
-renderPosts()
+
+
+function addLike(){
+
+}
 
