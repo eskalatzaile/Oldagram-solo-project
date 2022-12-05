@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 2px 0;
+    background-color: lightgray;
+}
+
+#instagram-container{
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/*Text modifiers*/
+.small-txt{
+    font-size: 15px;
+}
+
+.bold-txt{
+    font-weight: bold;
+}
+
+.margin-zero{
+    margin: 0;
+}
+
+/*Images*/
+#my-avatar,
+.post-avatar{
+    height: 45px;
+    border-radius: 50%;
+}
+
+#post-img{
+    width: 100%;
+}
+
+/*Common Modifiers*/
+header,
+.user-container,
+.user-location-info,
+.icon-container, 
+.likes,
+.desc-container,
+footer{
+    display: flex;
+    margin: 8px 10px;
+}
+
+
+/*Header Content*/
+header{
+    border-bottom: 2px solid lightgray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+}
+
+#logo{
+    height: 60px;
+}
+
+
+/*Poster Information Content*/
+.user-container{
+    align-items: center;
+}
+
+.user-location-info{
+    flex-direction: column;
+    margin: 0;
+    padding-left: 10px;
+}
+
+/*Description Content*/
+.likes{
+   font-size: 12px; 
+   margin-top: 14px;
+}
+.description{
+    font-style: normal;
+}
+
+.desc-container{
+    margin-bottom: 25px;
+}
+
+/*Footer*/
+footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid lightgray;
+    color: gray;
+    font-style: italic;
+    margin-top: 25px;
+    padding-top: 50px;
+}
+
+.link-txt{
+    font-style: normal;
+    color: #252525;
+}
+
+.link-txt:hover,
+.link-txt:focus,
+.link-txt:active {
+    color: cadetblue;
+}
+
+/*Icons*/
+.icon{
+    height: 25px;
+    margin-right: 8px;
+}
