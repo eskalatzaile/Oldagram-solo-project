@@ -47,6 +47,14 @@ footer{
     margin: 8px 10px;
 }
 
+a:hover, 
+a:focus,
+#my-avatar,
+.post-avatar,
+.icon {
+    cursor: pointer;
+}
+
 
 /*Header Content*/
 header{
@@ -63,6 +71,11 @@ header{
 
 
 /*Poster Information Content*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .user-container{
     align-items: center;
 }

@@ -52,7 +52,7 @@ function renderPosts(){
                 <p class="likes bold-txt margin-zero">${post.likes} likes</p>
                 
                 <div class="desc-container">
-                    <p class="description small-txt margin-zero"><span class="bold-txt">${post.username}</span> ${post.comment}</p>
+                    <p class="description small-txt margin-zero"><a class="bold-txt" href="#">${post.username}</a> ${post.comment}</p>
                 </div>
                 `
     })
